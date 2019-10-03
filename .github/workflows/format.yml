@@ -1,4 +1,6 @@
-name: CI: Format
+---
+
+name: "CI: Format"
 
 on:
   - pull_request

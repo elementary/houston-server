@@ -1,4 +1,6 @@
-name: CI: Test
+---
+
+name: "CI: Test"
 
 on:
   - pull_request

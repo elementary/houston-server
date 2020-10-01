@@ -19,30 +19,73 @@
   width: 100%;
   border-radius: 3px;
   background-color: #fff;
-  padding: 1rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 8px 10px 1px rgba(0, 0, 0, 0.07), 0 3px 14px 2px rgba(0, 0, 0, 0.06),
+    0 10px 10px -3px rgba(0, 0, 0, 0.2);
+  padding: 2.6rem;
 }
 
 @media (width >= 500px) {
   .auth-login .login {
     max-width: 500px;
+    min-width: 360px;
   }
-}
-
-.auth-login .login label {
-  display: block;
-  margin-bottom: 0.2em;
-  width: 100%;
 }
 
 .auth-login .login input {
   display: block;
   width: 100%;
+  background: #efefef;
+  border: 1px solid transparent;
+  margin-bottom: 15px;
+  padding: 16px 12px;
 }
 
-.auth-login .login > div:not(:first-child) {
-  margin-top: 1rem;
+.auth-login .login input:focus {
+  border: 1px solid #7a36b1;
 }
 
-.auth-login .login > div:last-child {
-  text-align: right;
+.auth-login .login button {
+  margin: 0;
+  width: 100%;
+  height: 49px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-color: transparent;
+  background: #7a36b1;
+  color: #fff;
+  box-shadow: none;
+  margin-bottom: 15px;
+}
+
+.auth-login .login .create-account {
+  font-size: 13px;
+  text-align: center;
+  color: #aaa;
+}
+
+.auth-login .login span a {
+  color: #7a36b1;
+}
+
+.auth-login .login .error {
+  background: rgba(209, 19, 57, 0.2);
+  font-size: 13px;
+  color: rgba(209, 19, 57, 1);
+  margin-bottom: 15px;
+  padding: 10px 12px;
+  border-radius: 3px;
+}
+
+.auth-login nav {
+  background-color: transparent;
+  color: #fff;
+  fill: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.auth-login footer {
+  padding-top: 0;
+  background-color: #fff;
 }

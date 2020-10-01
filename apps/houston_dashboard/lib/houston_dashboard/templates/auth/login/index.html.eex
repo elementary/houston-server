@@ -1,21 +1,19 @@
 <%= form_for @conn, Routes.login_path(@conn, :create), [as: :login], fn f -> %>
-  <div>
-    <%= label f, :username_or_email, dgettext("auth", "Username or Email") %>
-    <%= text_input f, :username_or_email, value: @username_or_email %>
-  </div>
-
-  <div>
-    <%= label f, :password, dgettext("auth", "Password") %>
-    <%= password_input f, :password %>
-  </div>
-
+<div class="login">
   <%= if @error != "" do %>
     <div class="error">
       <span><%= @error %></span>
     </div>
   <% end %>
-
-  <div>
-    <%= submit dgettext("auth", "Log In") %>
+  <div class="form-input">
+    <%= text_input f, :username_or_email, value: @username_or_email, placeholder: dgettext("auth", "username or email") %>
   </div>
+  <div class="form-input">
+    <%= password_input f, :password, placeholder: dgettext("auth", "password") %>
+  </div>
+  <div class="form-action">
+    <%= submit dgettext("auth", "Login") %>
+  </div>
+  <div class="create-account"><span><%= dgettext("auth", "Not registered?") %> <%= link(dgettext("auth", "Create an account"), to: "#") %></span></div>
+</div>
 <% end %>

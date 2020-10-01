@@ -23,7 +23,8 @@ RUN cd /opt/houston && \
   MIX_ENV=dev mix deps.compile --all && \
   MIX_ENV=test mix deps.compile --all && \
   cd /opt/houston/apps/houston_dashboard/assets && \
-  npm ci
+  npm ci && \
+  ls /opt/houston/apps/houston_dashboard/assets/node_modules/
 
 EXPOSE 4000
 

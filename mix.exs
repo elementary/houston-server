@@ -41,7 +41,7 @@ defmodule Elementary.HoustonServer.MixProject do
       {:jason, "~> 1.0"},
       {:mint, "~> 1.2.0"},
       {:phoenix_html, "~> 2.11"},
-      {:phoenix_live_view, "~> 0.14.6"},
+      {:phoenix_live_view, "~> 0.15.0"},
       {:phoenix, "~> 1.5.5"},
       {:plug_cowboy, "~> 2.0"},
       {:telemetry_metrics, "~> 0.4"},

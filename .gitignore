@@ -38,3 +38,6 @@ npm-debug.log
 
 # Test results
 /test/houston_server_client_errors/
+
+# asdf version manager
+.tool-versions

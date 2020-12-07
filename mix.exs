@@ -50,7 +50,7 @@ defmodule Elementary.HoustonServer.MixProject do
       {:credo, "~> 1.4", only: :dev, runtime: false},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:floki, ">= 0.27.0", only: :test},
-      {:wallaby, "~> 0.26.0", runtime: false, only: :test}
+      {:wallaby, "~> 0.27.0", runtime: false, only: :test}
     ]
   end
 

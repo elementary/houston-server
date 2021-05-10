@@ -39,7 +39,7 @@ defmodule Elementary.HoustonServer.MixProject do
       {:decimal, "~> 2.0"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:mint, "~> 1.2.0"},
+      {:mint, "~> 1.3.0"},
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_view, "~> 0.15.0"},
       {:phoenix, "~> 1.5.5"},

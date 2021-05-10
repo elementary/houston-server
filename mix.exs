@@ -34,22 +34,23 @@ defmodule Elementary.HoustonServer.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:cachex, "~> 3.3"},
       {:castore, "~> 0.1.0"},
+      {:credo, "~> 1.5.4", only: :dev, runtime: false},
       {:decimal, "~> 2.0"},
+      {:floki, ">= 0.27.0", only: :test},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:mint, "~> 1.2.0"},
-      {:phoenix_html, "~> 2.11"},
-      {:phoenix_live_view, "~> 0.15.0"},
-      {:phoenix, "~> 1.5.5"},
-      {:plug_cowboy, "~> 2.0"},
+      {:mint, "~> 1.3.0"},
+      {:nebulex, "~> 2.0.0-rc.1"},
+      {:phoenix_html, "~> 2.14.3"},
+      {:phoenix_live_reload, "~> 1.3", only: :dev},
+      {:phoenix_live_view, "~> 0.15.3"},
+      {:phoenix, "~> 1.5.9"},
+      {:plug_cowboy, "~> 2.5"},
+      {:shards, "~> 1.0"},
       {:telemetry_metrics, "~> 0.4"},
       {:telemetry_poller, "~> 0.4"},
-      {:tesla, "~> 1.3.0"},
-      {:credo, "~> 1.4", only: :dev, runtime: false},
-      {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:floki, ">= 0.27.0", only: :test},
+      {:tesla, "~> 1.4.0", override: true},
       {:wallaby, "~> 0.28.0", runtime: false, only: :test}
     ]
   end
